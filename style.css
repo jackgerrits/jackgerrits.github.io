@@ -1,0 +1,151 @@
+@charset "utf-8";
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-family: 'Cabin', sans-serif;
+	color: #666;
+}#banner {
+	margin: 0px;
+	padding: 0px;
+	height: 800px;
+	width: auto;
+	background-image: url(banner.jpg);
+	background-repeat: no-repeat;
+}
+#banner #title h1 {
+	font-size: 100px;
+	font-weight: 700;
+	color: #FFF;
+}
+#title {
+	float: left;
+	margin-top: 0px;
+	margin-left: 50px;
+}
+#navBar {
+	height: 40px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	width: auto;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	color: #999;
+	font-weight: bold;
+	font-size: 24px;
+}
+#content #about {
+	height: 400px;
+	width: 800px;
+	margin-top: 200px;
+}
+#content #contact .leftBox{
+	height: 400px;
+	width: 400px;
+	float: left;
+	background-color: #066;
+}
+#content #contact {
+	height: 400px;
+	width: 800px;
+	margin-top: 200px;
+}
+
+#content #bitcoin {
+	height: 400px;
+	width: 800px;
+	margin-top: 200px;
+}
+#content #bitcoin .leftBox {
+	height: 400px;
+	width: 400px;
+	background-color: #F60;
+	float: left;
+}
+
+
+
+.leftBox   {
+	height: 400px;
+	width: 400px;
+	background-color: #5D7DA6;
+	float: left;
+}
+.rightBox   {
+	float: right;
+	height: 400px;
+	width: 400px;
+}
+#content #downloads {
+	height: 400px;
+	width: 800px;
+	margin-top: 200px;
+}
+#content #downloads .leftBox {
+	height: 400px;
+	width: 400px;
+	float: left;
+	background-color: #900;
+}
+
+
+
+
+
+
+#content {
+	height: 2400px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#banner a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+#banner #navBar a:hover {
+	color: #BCBECD;
+}
+.leftBox h1   {
+	color: #FFF;
+	float: right;
+	margin-top: 300px;
+	margin-right: 20px;
+	font-size: 72px;
+}
+.rightBox p   {
+	padding: 20px;
+	margin: 0px;
+}
+
+#statcounter {
+	height: 20px;
+	width: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+a {
+	color: #666;
+	text-decoration: underline;
+}
+#topLine {
+	height: 10px;
+	width: 100%;
+	background-color: #5D7DA6;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+a:hover {
+	color: #999;
+}

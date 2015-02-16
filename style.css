@@ -10,137 +10,87 @@ body {
 	padding-left: 0px;
 	font-family: 'Cabin', sans-serif;
 	color: #666;
-}#banner {
-	margin: 0px;
-	padding: 0px;
-	height: 800px;
-	width: auto;
-	background-image: url(banner.jpg);
-	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
 }
-#banner #title h1 {
-	font-size: 100px;
-	font-weight: 700;
+html {
+	height: 100%;	
+}
+#container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#titleContainer {
+	float: left;
+	width: 40%;
+	height: 100%;
+	background-color: #005C99;
+}
+#title {	
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 80px;
+	text-align: right;
 	color: #FFF;
-}
-#title {
-	float: left;
-	margin-top: 0px;
-	margin-left: 50px;
-}
-#navBar {
-	height: 40px;
 	float: right;
-	margin-top: 10px;
-	margin-right: 20px;
-	width: auto;
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	color: #999;
-	font-weight: bold;
-	font-size: 24px;
+	padding-right: 20px;
 }
-#content #about {
-	height: 400px;
-	width: 800px;
-	margin-top: 200px;
-}
-#content #contact .leftBox{
-	height: 400px;
-	width: 400px;
+
+#linksContainer {
 	float: left;
-	background-color: #066;
+	width: 20%;
+	height: 100%;
 }
-#content #contact {
-	height: 400px;
-	width: 800px;
-	margin-top: 200px;
-}
-
-#content #bitcoin {
-	height: 400px;
-	width: 800px;
-	margin-top: 200px;
-}
-#content #bitcoin .leftBox {
-	height: 400px;
-	width: 400px;
-	background-color: #F60;
+#links {	
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 25px;
+	text-align: left;
+	color: #666;
 	float: left;
+	padding-left: 20px; 
 }
 
-
-
-.leftBox   {
-	height: 400px;
-	width: 400px;
-	background-color: #5D7DA6;
-	float: left;
-}
-.rightBox   {
-	float: right;
-	height: 400px;
-	width: 400px;
-}
-#content #downloads {
-	height: 400px;
-	width: 800px;
-	margin-top: 200px;
-}
-#content #downloads .leftBox {
-	height: 400px;
-	width: 400px;
-	float: left;
-	background-color: #900;
-}
-
-#content {
-	height: 2400px;
-	width: 800px;
-	margin-right: auto;
-	margin-left: auto;
-}
-#banner a{
+#links a {
 	text-decoration: none;
-	color: #FFF;
+	color: #666;
+	float: left;
 }
 
-
-#banner #navBar a:hover {
-	color: #BCBECD;
-}
-.leftBox h1   {
-	color: #FFF;
-	float: right;
-	margin-top: 300px;
-	margin-right: 20px;
-	font-size: 72px;
-}
-.rightBox p   {
-	padding: 20px;
-	margin: 0px;
+#links a:hover::after {
+    content: '  <';
 }
 
-#statcounter {
-	height: 20px;
-	width: 50px;
-	margin-right: auto;
-	margin-left: auto;
+.contentContainer {
+	float: left;
+	width: 40%;
+	height: 100%;
+	color: #666;
+	background-color: #FFF;
+
 }
+
+.content {	
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	text-align: left;
+	
+	display: none;
+}
+
+.contentTitle {
+	font-size: 40px;
+}
+
 a {
 	color: #666;
 	text-decoration: underline;
-}
-#topLine {
-	height: 10px;
-	width: 100%;
-	background-color: #5D7DA6;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-}
-
-a:hover {
-	color: #999;
 }

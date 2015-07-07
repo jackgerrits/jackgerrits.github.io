@@ -36,4 +36,14 @@ $(document).ready(function(){
 			current = content.NONE;
 		}
 	});
+
+	$('.other').click( function() {
+		if (current == content.ABOUT) {
+			$('#aboutContainer').fadeOut();
+			current = content.NONE;
+		} else if (current == content.CONTACT){
+			$('#contactContainer').fadeOut();
+			current = content.NONE;
+		} 
+	});
 });

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<section id="project">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>{{ page.title }}</h2><hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <a href="#"><img src="{{ page.banner_image }}" class="img-responsive"></a>
+            </div>
+        </div>
+        <div style="margin-top: 20px;" class="row">
+            <div class="col-md-3 sidebar">
+                <p>
+                    <span class="side-title"><i class="fa fa-code"></i> Platform: </span>
+                    <span class="side-item">{{ page.platforms }}</span>
+                    <br>
+                    <span class="side-title"><i class="fa fa-desktop"></i> Technologies: </span>
+                    <span class="side-item">{{ page.technologies }}</span>
+                    <br><br>
+                    <span class="links">
+                        {{ page.side_links }}
+                    </span>
+                </p>
+            </div>
+            <div class="col-md-9"><p>
+                {{ content }}
+            </p>
+            </div>
+        </div>
+    </div>
+</section>

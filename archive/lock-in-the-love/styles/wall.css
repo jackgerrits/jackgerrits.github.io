@@ -1,0 +1,18 @@
+.i {
+    margin-right: 5px;
+}
+
+#imageCanvas {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.thumb {
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 400px;
+    height: 400px;
+    margin-right: 4px;
+}

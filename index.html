@@ -1,53 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
-	<meta charset="utf-8"/>
-	<title>Jack Gerrits</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+---
+layout: default
+is_main_page: true
+---
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-2">
+                <div class="intro-text">
+                    <span class="name">Jack Gerrits </span><span class="subname">A personal website.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-		ga('create', 'UA-64299122-1', 'auto');
-		ga('send', 'pageview');
-		
-	</script>
-</head>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>About </h2><hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 text-center vertical-align about-col">
+                <span class="fa fa-hand-peace-o feat-glyph"> </span>
+            </div>
+            <div class="col-md-4 about-col">
+                <p>
+                I am Jack, a Computer Science student at the University of Adelaide. This website serves as a place to showcase my work and let you get in contact with me.<br><br>Opportunities multiply as they are seized.<br><i>-Sun Tzu </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<body>
-	<div id="container">
-		<div id="titleContainer">
-			<div id="title">
-				Jack<br />Gerrits
-			</div>
-		</div>
-		<div id="linksContainer">
-			<div id="links">
-				<a id="about" href="#">About</a> <br /> 
-				<a id="contact" href="#">Contact</a> <br /> 
-				<a class="other" href="https://github.com/jackgerrits" target="_blank">Github</a> <br />
-				<a class="other" href="https://500px.com/jackgerrits" target="_blank">Photography</a> <br /> 
-				<!--<a class="other" href="https://www.jackgerrits.wordpress.com" target="_blank">Blog</a> <br /> -->
-			</div>
-		</div>
-		<div class="contentContainer">
-			<div id="aboutContainer" class="content">
-				<span class="contentTitle"><b> > </b> About</span>
-				<p>I'm Jack, a Computer Science student at the University of Adelaide.<br /><br />
-					Opportunities multiply as they are seized.<br />
-					<i>-Sun Tzu</i></p>
-				</div>
-				<div id="contactContainer" class="content">
-					<span class="contentTitle"><b> > </b> Contact</span>
-					<p>Email: &#106;&#097;&#099;&#107;&#064;&#106;&#097;&#099;&#107;&#103;&#101;&#114;&#114;&#105;&#116;&#115;&#046;&#099;&#111;&#109;</p>
-				</div>
-			</div>
+<section id="projects">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>Projects</h2><hr>
+        </div>
+    </div>
+    {% assign projects = site.projects | sort: 'priority' %}
+    {% for item in projects %}
+        {% include index-project.html project=item %}
+    {%endfor%}
+</div>
+</section>
 
-		</div>
-	</body>
-	</html>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Elsewhere on the Internet </h2><hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 contact-icons text-center col-lg-offset-2">
+                <ul class="list-inline">
+                    <li><a href="mailto:jack@jackgerrits.com"><i class="fa fa-fw fa-envelope-o"> </i></a></li>
+                    <li><a target="_blank" href="https://github.com/jackgerrits"><i class="fa fa-fw fa-github-square"> </i></a></li>
+                    <li><a target="_blank" href="https://au.linkedin.com/in/jackgerrits"><i class="fa fa-fw fa-linkedin-square"> </i></a></li>
+                    <li><a target="_blank" href="https://500px.com/jackgerrits"><i class="fa fa-fw fa-500px"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

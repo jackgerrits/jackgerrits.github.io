@@ -1,0 +1,20 @@
+title: Jack Gerrits
+description: >
+  Personal Website
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jackgerrits.com" # the base hostname & protocol for your site
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+
+collections:
+  projects:
+    output: true
+
+# Build settings
+markdown: kramdown

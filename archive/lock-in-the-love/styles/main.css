@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-family: 'Cabin', sans-serif;
+	color: #666;
+	height: 100%;
+	width: 100%;
+	background-color: #F0F0F0; 
+}
+
+html {
+	height: 100%;
+}
+
+#container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+

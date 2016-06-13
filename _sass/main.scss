@@ -1,0 +1,182 @@
+body {
+    padding-top: 60px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Raleway', 'Cabin', "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.7em;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-direction: column; /* Safari 6.1+ */
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+    flex: 1;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+    min-height: 500px;
+}
+
+footer {
+    margin-top: 60px;
+    height: 45px;
+    padding: 10px 0;
+    background-color: #074973;
+    color: white;
+}
+
+nav .navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    line-height: unset;
+}
+
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+     max-height: 400px; 
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+@media (min-width: 767px) {
+    .navbar .divider-vertical {
+        height: 60px;
+        margin: 0 9px;
+        border-right: 1px solid #063D61;
+        border-left: 1px solid #063D61;
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu .divider {
+        background-color: #063D61;
+    }
+}
+
+header{
+    padding: 100px 0;
+}
+
+section {
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header {
+    background: #0A67A3;
+    color: white;
+}
+
+
+header  .name {
+    display: block;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+header  .subname {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.feat-glyph {
+    font-size: 150px;
+}
+
+@media (min-width: 1200px){
+    .about-col {
+        height: 150px;
+    }
+}
+
+.about-col {
+    margin-bottom: 25px;
+}
+
+.vertical-align {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: center;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/*this makes the contact links not use link colour*/
+#contact a {
+    color: #293740;
+}
+
+#contact a:hover {
+    color: #15A2D6;
+}
+/*****/
+
+.contact-icons {
+    font-size: 1.2em;
+}
+
+.contact-icons .fa {
+    font-size: 60px;
+}
+
+/* Burger animation: http://codepen.io/impondesk/pen/EaKoXY */
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
+
+.error-div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#logo {
+	position: absolute;
+	top:20px;
+	left: 20px;
+	padding: 0px;
+	-moz-box-shadow: 3px 3px 5px #FFCDD2;
+	-webkit-box-shadow: 3px 3px 5px #FFCDD2;
+	box-shadow: 3px 3px 5px #FFCDD2;
+	background-color: #D13135;
+	z-index: 100;
+
+}

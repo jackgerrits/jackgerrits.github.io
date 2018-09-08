@@ -1,69 +1,64 @@
----
-layout: default
-is_main_page: true
----
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-2">
-                <div class="intro-text">
-                    <span class="name">Jack Gerrits </span><span class="subname">A personal website.</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<!DOCTYPE html>
+<html>
 
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>About </h2><hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-2 text-center vertical-align about-col">
-                <span class="fa fa-hand-peace-o feat-glyph"> </span>
-            </div>
-            <div class="col-md-4 about-col">
-                <p>
-                Currently a Software Engineer at Microsoft. Completed a Bachelor of Computer Science (Advanced) at the University of Adelaide in 2016. <br><br>Opportunities multiply as they are seized.<br><i>-Sun Tzu </i>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<section id="projects">
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2>Projects</h2><hr>
-        </div>
-    </div>
-    {% assign projects = site.projects | sort: 'priority' %}
-    {% for item in projects %}
-        {% include index-project.html project=item %}
-    {%endfor%}
-</div>
-</section>
+    <title>Jack Gerrits</title>
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Jack Gerrits">
 
-<section id="contact">
-    <div class="container">
+    <link rel="canonical" href="https://jackgerrits.com/">
+    <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="css/simple-grid.min.css">
+    <link rel="stylesheet" type='text/css' href="css/main.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64299122-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-64299122-1');
+    </script>
+</head>
+
+<body>
+    <main class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Elsewhere on the Internet </h2><hr>
-            </div>
+            <span class="name">Jack Gerrits</span>
         </div>
-        <div class="row">
-            <div class="col-lg-8 contact-icons text-center col-lg-offset-2">
-                <ul class="list-inline">
-                    <li><a href="mailto:jack@jackgerrits.com"><i class="fa fa-fw fa-envelope-o"> </i></a></li>
-                    <li><a target="_blank" href="https://github.com/jackgerrits"><i class="fa fa-fw fa-github-square"> </i></a></li>
-                    <li><a target="_blank" href="https://au.linkedin.com/in/jackgerrits"><i class="fa fa-fw fa-linkedin-square"> </i></a></li>
-                    <li><a target="_blank" href="https://500px.com/jackgerrits"><i class="fa fa-fw fa-500px"></i></a></li>
-                </ul>
-            </div>
+        <div class="row contact">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://au.linkedin.com/in/jackgerrits">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/jackgerrits">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                </li>
+                <li>
+                    <script>
+                        document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'+'5'+';'+'l'+'t'+'&'+'#'+'1'+'1'+'1'+';'+
+                            '&'+'#'+'5'+'8'+';'+'j'+'a'+'c'+'k'+'&'+'#'+'6'+'4'+';'+'%'+'6'+'A'+'a'+'c'+'&'+'#'+'1'+'0'+'7'+';'+
+                            '&'+'#'+'1'+'0'+'3'+';'+'&'+'#'+'3'+'7'+';'+'&'+'#'+'5'+'4'+';'+'&'+'#'+'5'+'3'+';'+'r'+'%'+'7'+'2'+
+                            'i'+'t'+'s'+'&'+'#'+'4'+'6'+';'+'%'+'&'+'#'+'5'+'4'+';'+'3'+'&'+'#'+'1'+'1'+'1'+';'+'&'+'#'+'1'+'0'+
+                            '9'+';'+"'"+'>');
+                    </script>
+                    <noscript>[Turn on JavaScript to see the email address]</noscript>
+                    <i class="fas fa-envelope-square fa-3x"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-</section>
+    </main>
+</body>
+
+</html>

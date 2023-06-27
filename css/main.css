@@ -1,0 +1,45 @@
+body {
+  min-height:100vh;
+  background:#0a67a3;
+}
+
+* {
+  font-family:raleway,helvetica neue,Helvetica,Arial,sans-serif;
+  color:#fff;
+  line-height: 1;
+}
+
+main {
+  padding: 100px 0;
+}
+
+.name {
+  font-size:6em;
+  font-weight:700;
+}
+
+.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.contact li {
+  float: left;
+}
+
+.contact a {
+  display: block;
+  margin-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contact a i {
+  color:#A5C7DD
+}
+
+.contact a:hover i {
+  color:#639EC4
+}
